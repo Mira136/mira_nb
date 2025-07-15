@@ -1,18 +1,21 @@
 ﻿using System;
 
-namespace mira_bd
+namespace mira_nb
 {
     class Arrayfreq
     {
         public static void Main(string[] args)
         {
             int[] ary = new int[5];
+            bool[] freq = new bool[5];
+
             // intialization of array elements
             Console.WriteLine("Enter arraay elements:");
 
             for (int i = 0; i < ary.Length; i++)
             {
                 ary[i] = Int32.Parse(Console.ReadLine());
+                freq[i] = false;
             }
 
             for (int i = 0; i < ary.Length; i++)
@@ -34,4 +37,3 @@ namespace mira_bd
         }
     }
 }
-// 2 3 2 1 3 2  - 6 elements

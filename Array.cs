@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace mira_bd
+namespace mira_nb
 {
 	class Array
 	{

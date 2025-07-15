@@ -1,14 +1,16 @@
 ﻿using System;
 
-namespace mira_bd
+namespace mira_nb
 {
     class Arraysort
     {
         public static void Main(string[] args)
         {
             int[] ary = new int[5];
+
             // intialization of array elements
-            Console.WriteLine("Enter arraay elements:");
+            Console.WriteLine("Enter array elements:");
+
             for (int i = 0; i < ary.Length; i++)
             {
                 ary[i] = Int32.Parse(Console.ReadLine());
@@ -26,7 +28,9 @@ namespace mira_bd
                     }
                 }
             }
-            Console.WriteLine("Sorted array elements:");
+
+            Console.WriteLine("\nSorted array elements:");
+
             for (int i = 0; i < ary.Length; i++)
             {
                 Console.WriteLine(ary[i]);
