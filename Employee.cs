@@ -7,30 +7,42 @@ namespace mira_nb
         int empId;
         string eName;
         double salary;
-        void getData()
+
+        public void getData(int empId, string eName, double salary)
         {
-            empId = 111;
-            eName = "Mira";
-            salary = 30000.00;
+            this.empId = empId;
+            this.eName = eName;
+            this.salary = salary;
         }
+
         public void showData()
         {
-            Console.WriteLine("Emp id: " + empId);
+            Console.WriteLine("Emp ID: " + empId);
             Console.WriteLine("Emp Name: " + eName);
-            Console.WriteLine("Emp Salary: " +  salary);
+            Console.WriteLine("Emp Salary: " + salary);
         }
-        internal class ClassDemo
-        {
-            public static void Main(string[] args)
-            {
-                Employee e1 = new Employee();
-                e1.getData();
-                e1.showData();
 
-                Employee e2 = new Employee();
-                e2.getData();
+        public double getSalary()
+        {
+            return salary;
+        }
+    }
+
+    internal class ClassDemo
+    {
+        public static void Main(string[] args)
+        {
+            Employee e1 = new Employee();
+            e1.getData(111, "Mira", 30000.00);
+
+            Employee e2 = new Employee();
+            e2.getData(112, "Mayra", 20000.00);
+
+            Console.WriteLine("Employee with higher salary:");
+            if (e1.getSalary() > e2.getSalary())
+                e1.showData();
+            else
                 e2.showData();
-            }
         }
     }
 }
