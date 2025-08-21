@@ -16,15 +16,13 @@ namespace mira_nb
             Console.WriteLine("Employee name is:" + eName);
             Console.WriteLine("Employee salary is:" + eSalary);
         }
-    }
 
     internal class DemoClass2
     {
-         public static void Main(string[] args)
-         {
-              Employee1 emp = new Employee1();
-              emp.showData();
-         }
+        public static void Main(string[] args)
+        {
+            Employee1 emp = new Employee1();
+            emp.showData();
+        }
     }
 }
-
